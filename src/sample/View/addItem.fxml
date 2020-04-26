@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootanchor" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #babdbe;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AddItemController">
+   <children>
+      <Label fx:id="notasklabel" alignment="CENTER" layoutX="152.0" layoutY="174.0" opacity="0.59" prefHeight="52.0" prefWidth="413.0" text="No Task For Today Yet!!">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="97.0" prefWidth="701.0" style="-fx-background-color: #eceff1;">
+         <children>
+            <Label alignment="CENTER" layoutX="264.0" layoutY="31.0" prefHeight="52.0" prefWidth="174.0" text="To-Do">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="addItembtn" fitHeight="66.0" fitWidth="64.0" layoutX="319.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icon_add.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

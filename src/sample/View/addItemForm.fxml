@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #babdbe;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AddItemFormController">
+   <children>
+      <JFXTextField fx:id="taskField" focusColor="#efebebbf" layoutX="161.0" layoutY="94.0" prefHeight="44.0" prefWidth="377.0" promptText="Task" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="descriptionField" focusColor="#efebeb" layoutX="161.0" layoutY="178.0" prefHeight="44.0" prefWidth="377.0" promptText="Description" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="savetaskbtn" layoutX="278.0" layoutY="269.0" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: #efebeb;" text="Save Task">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane prefHeight="55.0" prefWidth="700.0" style="-fx-background-color: #eceff1;">
+         <children>
+            <Label alignment="CENTER" layoutX="279.0" layoutY="6.0" prefHeight="44.0" prefWidth="142.0" text="To-Do">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="taskaddedlabel" alignment="CENTER_RIGHT" layoutX="420.0" layoutY="64.0" prefHeight="18.0" prefWidth="267.0" text="Task added Successfully!!" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="mytodobtn" layoutX="562.0" layoutY="355.0" prefHeight="20.0" prefWidth="124.0" style="-fx-background-color: #efebeb;" text="My Todo's (2)" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
